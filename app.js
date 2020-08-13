@@ -49,3 +49,40 @@
 // const numbers = [1, 2, 3, 4, 5];
 // numbers.push(6);
 // console.log(numbers);
+
+
+
+//===== Data Types=====
+
+// PRIMITIVE TYPES
+
+// Strings
+const name = 'John Doe';
+// Number
+const age = 45;
+// Boolean
+const HasKids = true;
+// Null
+const car = null;
+// Undefined
+let test;
+// Symbol
+const sym = Symbol();
+
+
+
+// REFERENCE TYPES - Objects 
+
+// Array
+const hobbies = ['movies', 'music'];
+
+// Object literal
+const address = {
+  town: 'Rotherham',
+  region: 'South Yorkshire'
+}
+
+//Date
+const today = new Date();
+console.log(today);
+console.log(typeof today);
