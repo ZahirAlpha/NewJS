@@ -134,3 +134,37 @@
 
 // console.log(sum);
 // console.log(typeof sum);
+
+// The Math Objects 
+
+// const num1 = 100;
+// const num2 = 50;
+// let val;
+
+// // Simple maths with numbers
+
+// val = num1 + num2;
+// val = num1 * num2;
+// val = num1 - num2;
+// val = num1 / num2;
+// val = num1 % num2;
+
+// // Math Object
+
+// val = Math.PI;
+// val = Math.E;
+// val = Math.round(2.4);
+// val = Math.ceil(2.4);
+// val = Math.floor(2.4);
+// val = Math.sqrt(2.4);
+// val = Math.abs(2.4);
+// val = Math.pow(2.4);
+// val = Math.min(2, 33, 4, 1, 55, 6, 3, -2);
+// val = Math.max(2, 33, 4, 1, 55, 6, 3, -2);
+
+// val = Math.random();
+
+// // this chooses a random number between 1 - 20
+// val = Math.floor(Math.random() * 20 + 1);
+
+// console.log(val);
