@@ -168,3 +168,68 @@
 // val = Math.floor(Math.random() * 20 + 1);
 
 // console.log(val);
+
+
+// Strings, Methods and Concatenations
+
+const firstName = 'Zahir';
+const LastName = 'Rafiq';
+const age = 47;
+const str = 'Hello there my name is Zed';
+const tags = 'web design, web development,programming';
+
+let val;
+val = firstName + LastName;
+
+// Concatenations
+
+val = firstName + ' ' + LastName;
+
+// // append
+// val = 'Zahir ';
+// val += 'Rafiq ';
+
+val = 'Hello my name is ' + firstName + ' and I\'am ' + age;
+
+// Escaping 
+val = 'That\'s awesome, I can\'t wait';
+
+
+// Length Property Note Property does not need brackets.
+val = firstName.length;
+
+// concat()
+val = firstName.concat(' ', LastName);
+
+// change case 
+val = firstName.toLocaleLowerCase();
+val = firstName.toUpperCase();
+
+
+// indexOf
+val = firstName.indexOf('a');
+val = firstName.lastIndexOf('h');
+
+// charAt
+val = firstName.charAt('4');
+// get last char
+val = firstName.charAt(firstName.length - 1);
+
+// substrings()
+val = firstName.substring(0, 2);
+
+//slice()
+val = firstName.slice(0, 4);
+val = firstName.slice(-3);
+
+// spit()
+val = str.split(' ');
+val = tags.split(',');
+
+// replace()
+val = str.replace('Zed', 'Isaac');
+
+// includes()
+val = str.includes('Hello');
+
+console.log(val);
