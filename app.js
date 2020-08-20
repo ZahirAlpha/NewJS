@@ -170,66 +170,167 @@
 // console.log(val);
 
 
-// Strings, Methods and Concatenations
+// // Strings, Methods and Concatenations
 
-const firstName = 'Zahir';
-const LastName = 'Rafiq';
-const age = 47;
-const str = 'Hello there my name is Zed';
-const tags = 'web design, web development,programming';
+// const firstName = 'Zahir';
+// const LastName = 'Rafiq';
+// const age = 47;
+// const str = 'Hello there my name is Zed';
+// const tags = 'web design, web development,programming';
 
-let val;
-val = firstName + LastName;
+// let val;
+// val = firstName + LastName;
 
-// Concatenations
+// // Concatenations
 
-val = firstName + ' ' + LastName;
+// val = firstName + ' ' + LastName;
 
-// // append
-// val = 'Zahir ';
-// val += 'Rafiq ';
+// // // append
+// // val = 'Zahir ';
+// // val += 'Rafiq ';
 
-val = 'Hello my name is ' + firstName + ' and I\'am ' + age;
+// val = 'Hello my name is ' + firstName + ' and I\'am ' + age;
 
-// Escaping 
-val = 'That\'s awesome, I can\'t wait';
-
-
-// Length Property Note Property does not need brackets.
-val = firstName.length;
-
-// concat()
-val = firstName.concat(' ', LastName);
-
-// change case 
-val = firstName.toLocaleLowerCase();
-val = firstName.toUpperCase();
+// // Escaping 
+// val = 'That\'s awesome, I can\'t wait';
 
 
-// indexOf
-val = firstName.indexOf('a');
-val = firstName.lastIndexOf('h');
+// // Length Property Note Property does not need brackets.
+// val = firstName.length;
 
-// charAt
-val = firstName.charAt('4');
-// get last char
-val = firstName.charAt(firstName.length - 1);
+// // concat()
+// val = firstName.concat(' ', LastName);
 
-// substrings()
-val = firstName.substring(0, 2);
+// // change case 
+// val = firstName.toLocaleLowerCase();
+// val = firstName.toUpperCase();
 
-//slice()
-val = firstName.slice(0, 4);
-val = firstName.slice(-3);
 
-// spit()
-val = str.split(' ');
-val = tags.split(',');
+// // indexOf
+// val = firstName.indexOf('a');
+// val = firstName.lastIndexOf('h');
 
-// replace()
-val = str.replace('Zed', 'Isaac');
+// // charAt
+// val = firstName.charAt('4');
+// // get last char
+// val = firstName.charAt(firstName.length - 1);
 
-// includes()
-val = str.includes('Hello');
+// // substrings()
+// val = firstName.substring(0, 2);
 
-console.log(val);
+// //slice()
+// val = firstName.slice(0, 4);
+// val = firstName.slice(-3);
+
+// // spit()
+// val = str.split(' ');
+// val = tags.split(',');
+
+// // replace()
+// val = str.replace('Zed', 'Isaac');
+
+// // includes()
+// val = str.includes('Hello');
+
+// console.log(val);
+
+// Template Literals 
+
+// const name = 'Zahir';
+// const age = 47;
+// const job = 'Web Developer';
+// const town = 'Rotherham';
+// const heading = 'About me';
+// let html;
+
+// // without template strings (es5)
+// html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '</li><li>Town: ' + town + '</li></ul>';
+
+// function hello() {
+//   return 'hello';
+// }
+// // Template Strings/literals
+// html = `
+//   <h1>${heading}</h1>
+//   <ul>
+//     <li>Name: ${name}</li>
+//     <li>Age: ${age}</li>
+//     <li>Job: ${job}</li>
+//     <li>Town: ${town}</li>
+//     <li>${2+2}</li>
+//     <li>${hello()}</li>
+//     <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
+//   </ul>
+// `;
+
+
+// document.body.innerHTML = html;
+
+// Arrays amd Arrays Methods
+
+// Create some Arrays
+
+// const numbers = [43, 56, 33, 23, 44, 36, 5];
+// const numbers2 = new Array(22, 45, 33, 76, 54);
+// const fruit = ['Apple', 'Orange', 'Banana', 'Pear'];
+// const mix = [22, 'Hello', true, undefined, null, {
+//   a: 1,
+//   b: 1
+// }, new Date()];
+
+
+// let val;
+
+// // Get Array length
+// val = numbers.length;
+// // check if is array
+// val = Array.isArray(numbers);
+// // Get single value
+// val = numbers[3];
+// val = numbers[0];
+// // insert into a Array
+// numbers[2] = 100;
+// // find index of value
+// val = numbers.indexOf(36);
+
+// MUTATING ARRAYS
+
+// // add on end
+// numbers.push(250);
+// // add on front
+// numbers.unshift(120);
+// // take off from end
+// numbers.pop();
+// //take off from front
+// numbers.shift();
+// // Splice values
+// numbers.splice(1, 3);
+// // Reverse
+// numbers.reverse();
+
+// // Concatenate arrays
+// val = numbers.concat(numbers2);
+// // Sorting arrays
+// val = fruit.sort();
+// val = numbers.sort();
+
+// // Use the "Compare function"
+// val = numbers.sort(function (x, y) {
+//   return x - y;
+// });
+
+// // Reverse sort numbers
+// val = numbers.sort(function (x, y) {
+//   return y - x;
+// });
+
+// Find
+// function Over50(num) {
+//   return num > 50;
+// }
+
+// val = numbers.find(Over50);
+
+
+// console.log(numbers);
+// console.log(val);
