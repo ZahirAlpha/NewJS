@@ -338,50 +338,78 @@
 
 // ==== Object Literals ====//
 
-const person = {
-  firstName: 'Steve',
-  lastName: 'Smith',
-  age: 36,
-  email: 'steve@aol.com',
-  hobbies: ['Music', 'sport', ],
-  address: {
-    city: 'Miami',
-    state: 'FL'
-  },
-  getBirthYear: function () {
-    return 2020 - this.age;
-  }
-}
+// const person = {
+//   firstName: 'Steve',
+//   lastName: 'Smith',
+//   age: 36,
+//   email: 'steve@aol.com',
+//   hobbies: ['Music', 'sport', ],
+//   address: {
+//     city: 'Miami',
+//     state: 'FL'
+//   },
+//   getBirthYear: function () {
+//     return 2020 - this.age;
+//   }
+// }
+
+// let val;
+
+// val = person;
+
+// // get specific value
+// val = person.firstName;
+// val = person['lastName'];
+// val = person.age;
+// val = person.hobbies[1];
+// val = person.address.state;
+// val = person.address['city'];
+// val = person.getBirthYear();
+
+// console.log(val);
+
+// const people = [{
+//     name: 'John',
+//     age: 30
+//   },
+//   {
+//     name: 'Mike',
+//     age: 23
+//   }, {
+//     name: 'Nancy',
+//     age: 40
+//   }
+
+// ];
+
+// for (let i = 0; i < people.length; i++) {
+//   console.log(people[i].name);
+// }
+
+// ==== Date and Times ==== //
 
 let val;
 
-val = person;
+const today = new Date();
+let birthday = new Date('8-14-1973 9:25:00');
+birthday = new Date('August 14 1973');
+birthday = new Date('8/14/1973');
 
-// get specific value
-val = person.firstName;
-val = person['lastName'];
-val = person.age;
-val = person.hobbies[1];
-val = person.address.state;
-val = person.address['city'];
-val = person.getBirthYear();
+val = today.getMonth();
+val = today.getDate();
+val = today.getDay();
+val = today.getFullYear();
+val = today.getHours();
+val = today.getMinutes();
+val = today.getSeconds();
+val = today.getMilliseconds();
+val = today.getTime();
 
-console.log(val);
+birthday.setMonth(2);
+birthday.setDate(12);
+birthday.setFullYear(1985);
+birthday.setHours(3);
+birthday.setMinutes(30);
+birthday.setSeconds(25);
 
-const people = [{
-    name: 'John',
-    age: 30
-  },
-  {
-    name: 'Mike',
-    age: 23
-  }, {
-    name: 'Nancy',
-    age: 40
-  }
-
-];
-
-for (let i = 0; i < people.length; i++) {
-  console.log(people[i].name);
-}
+console.log(birthday);
