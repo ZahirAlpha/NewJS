@@ -560,18 +560,18 @@
 // FUNCTION DECLARATIONS
 
 //The functions name is greet
-function greet(firstName = 'John', lastName = 'Doe') {
-  // console.log('Hello');
-  return 'Hello ' + firstName + ' ' + lastName;
-}
+// function greet(firstName = 'John', lastName = 'Doe') {
+//   // console.log('Hello');
+//   return 'Hello ' + firstName + ' ' + lastName;
+// }
 
 // console.log(greet());
 
 // FUNCTION EXPRESSIONS
 
-const square = function (x = 3) {
-  return x * x;
-};
+// const square = function (x = 3) {
+//   return x * x;
+// };
 
 // console.log(square());
 
@@ -585,20 +585,113 @@ const square = function (x = 3) {
 //   console.log('Hello ' + name);
 // })('Brad');
 
-const todo = {
-  add: function () {
-    console.log(`Add todo....`);
-  },
-  edit: function (id) {
-    console.log(`Edit todo ${id}`);
-  }
-}
+// const todo = {
+//   add: function () {
+//     console.log(`Add todo....`);
+//   },
+//   edit: function (id) {
+//     console.log(`Edit todo ${id}`);
+//   }
+// }
 
 
-todo.delete = function () {
-  console.log('Delete todo....');
-}
+// todo.delete = function () {
+//   console.log('Delete todo....');
+// }
 
-todo.add();
-todo.edit(22);
-todo.delete();
+// todo.add();
+// todo.edit(22);
+// todo.delete();
+
+
+// ==== General Loops====//
+
+// FOR LOOP
+
+// for (let i = 0; i < 10; i++) {
+//   if (i === 2) {
+//     console.log('2 is the best number');
+//     continue;
+//   }
+
+//   if (i === 5) {
+//     console.log('Stop the loop')
+//     break;
+//   }
+
+//   console.log('Number ' + i);
+// }
+
+// WHILE LOOP
+
+// let i = 0;
+
+// while (i < 10) {
+//   console.log('Number' + i);
+//   i++;
+// }
+
+// Do WHILE
+
+// let i = 100;
+
+// do {
+//   console.log('Number' + i);
+//   i++;
+// }
+
+// while (i < 10);
+
+// Loop through ARRAY
+
+// const cars = ['Ford', 'Chevy', 'Honda', 'Toyota', 'Vw'];
+
+// for (let i = 0; i < cars.length; i++) {
+//   console.log(cars[i]);
+// }
+
+// this is cleaner 
+// FOREACH
+// cars.forEach(function (car, index, array) {
+//   console.log(`${index} : ${car}`);
+//   console.log(array);
+// })
+
+// MAP
+
+// const users = [{
+//     id: 1,
+//     name: 'John'
+//   },
+//   {
+//     id: 2,
+//     name: 'Sara'
+//   },
+//   {
+//     id: 3,
+//     name: 'Karen'
+//   },
+//   {
+//     id: 4,
+//     name: 'Steve'
+//   }
+// ];
+
+// const ids = users.map(function (user) {
+//   return user.id;
+// });
+
+// console.log(ids);
+
+
+// FOR IN LOOP
+
+// const user = {
+//   firstName: 'John',
+//   lastName: 'Doe',
+//   age: 40
+// }
+
+// for (let x in user) {
+//   console.log(`${x} : ${user[x]}`);
+// }
