@@ -715,27 +715,27 @@
 //   console.log('No');
 // }
 
-let val;
+// let val;
 
-// Outer height and width
-val = window.outerHeight;
-val = window.outerWidth;
+// // Outer height and width
+// val = window.outerHeight;
+// val = window.outerWidth;
 
 
 // Inner height and width
-val = window.innerHeight;
-val = window.innerWidth;
+// val = window.innerHeight;
+// val = window.innerWidth;
 
 // Scroll points 
-val = window.scrollY;
-val = window.scrollX;
+// val = window.scrollY;
+// val = window.scrollX;
 
 // Location Object
-val = window.location;
-val = window.location.hostname;
-val = window.location.port;
-val = window.location.href;
-val = window.location.search;
+// val = window.location;
+// val = window.location.hostname;
+// val = window.location.port;
+// val = window.location.href;
+// val = window.location.search;
 
 // Redirect 
 //window.location.href = 'https://google.com';
@@ -749,15 +749,46 @@ val = window.location.search;
 
 // Navigator
 
-val = window.navigator;
-val = window.navigator.appName;
-val = window.navigator.appVersion;
-val = window.navigator.userAgent;
-val = window.navigator.platform;
-val = window.navigator.vendor;
-val = window.navigator.languages;
+// val = window.navigator;
+// val = window.navigator.appName;
+// val = window.navigator.appVersion;
+// val = window.navigator.userAgent;
+// val = window.navigator.platform;
+// val = window.navigator.vendor;
+// val = window.navigator.languages;
 
 
 
 
-console.log(val);
+// console.log(val);
+
+// ===== Block scope with let and const
+
+// Global Scope
+
+// var a = 1;
+// let b = 2;
+// const c = 3;
+
+// function test() {
+//   var a = 4;
+//   let b = 5;
+//   const c = 6;
+//   console.log('Function Scope ', a, b, c);
+// }
+
+// test();
+
+// if (true) {
+//   // Block scope
+//   var a = 4;
+//   let b = 5;
+//   const c = 6;
+//   console.log(' If Scope ', a, b, c)
+// }
+
+// for (var a = 0; a < 10; a++) {
+//   console.log(`Loop: ${a}`);
+// }
+
+// console.log(' Global Scope ', a, b, c)
